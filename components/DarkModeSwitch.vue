@@ -2,27 +2,29 @@
   import { isDark, toggleDark } from '@/composables/dark'
 </script>
 <template>
-  <BaseButton
-    variant="ghost"
-    class="!rounded-lg mx-3"
-    aria-label="Toggle theme"
-    @click="toggleDark()"
-  >
-    <transition name="slide" mode="out-in">
-      <BaseIcon
-        v-if="isDark"
-        name="i-material-symbols-dark-mode-outline"
-        class="text-2xl"
-      >
-      </BaseIcon>
-      <BaseIcon
-        v-else
-        name="i-material-symbols-light-mode-outline"
-        class="text-2xl"
-      >
-      </BaseIcon>
-    </transition>
-  </BaseButton>
+  <div class="mx-3">
+    <BaseButton
+      variant="ghost"
+      class="!rounded-lg"
+      aria-label="Toggle theme"
+      @click="toggleDark()"
+    >
+      <transition name="slide" mode="out-in">
+        <BaseIcon
+          v-if="isDark"
+          name="i-material-symbols-dark-mode-outline"
+          class="text-2xl"
+        >
+        </BaseIcon>
+        <BaseIcon
+          v-else
+          name="i-material-symbols-light-mode-outline"
+          class="text-2xl"
+        >
+        </BaseIcon>
+      </transition>
+    </BaseButton>
+  </div>
 </template>
 <style lang="postcss">
   .slide-enter-active,

@@ -25,6 +25,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt',
     '@nuxtjs/html-validator',
+    '@nuxt/image',
   ],
   pinegrow: {
     liveDesigner: {
@@ -33,6 +34,9 @@ export default defineNuxtConfig({
       tailwindcss: {
         configPath: 'tailwind.config.ts',
         cssPath: '@/assets/css/tailwind.css',
+        // themePath: false, // Set to false so that Design Panel is not used
+        // restartOnConfigUpdate: true,
+        // restartOnThemeUpdate: true,
       },
       // plugins: [
       //   {
@@ -52,6 +56,24 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
+  image: {
+    domains: ['images.unsplash.com'],
+    alias: {
+      unsplash: 'https://images.unsplash.com',
+    },
+    // The screen sizes predefined by `@nuxt/image`:
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      '2xl': 1536,
+    },
+  },
+
   content: {
     markdown: {
       anchorLinks: false,
