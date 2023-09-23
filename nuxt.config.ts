@@ -52,6 +52,7 @@ export default defineNuxtConfig({
     '~/assets/css/tailwind.css',
     'lite-youtube-embed/src/lite-yt-embed.css',
   ],
+
   postcss: {
     plugins: {
       tailwindcss: {},
