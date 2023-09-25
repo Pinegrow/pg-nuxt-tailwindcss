@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt',
     '@pinia/nuxt',
-    '@nuxtjs/html-validator',
+    // '@nuxtjs/html-validator',
     '@nuxt/image',
     '@vee-validate/nuxt',
   ],
