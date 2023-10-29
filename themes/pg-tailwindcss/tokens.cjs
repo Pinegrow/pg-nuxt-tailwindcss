@@ -1,4 +1,7 @@
 /* Pinegrow generated Design Panel Begin */
+/* eslint-disable */
+/* prettier-disable */
+/* @ts-nocheck */
 
 const pg_colors = {
   gray: {
@@ -213,22 +216,16 @@ const pg_colors = {
 
 const pg_fonts = { sans: ["'Sora', sans-serif"], serif: ["'Sora', sans-serif"] }
 
+const pg_font_urls = [
+  'https://fonts.googleapis.com/css?family=Sora:100,200,300,400,500,600,700,800|Sora:100,200,300,400,500,600,700,800&display=swap',
+]
+
 const pg_backgrounds = {
   'design-image':
     "url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDF8fGNhZmV8ZW58MHx8fHwxNjg2MTkzMDk2fDA&ixlib=rb-4.0.3&q=80&w=1080')",
   'design-image-large':
     "url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDF8fGNhZmV8ZW58MHx8fHwxNjg2MTkzMDk2fDA&ixlib=rb-4.0.3&q=80&w=2000')",
 }
-
-/* Pinegrow generated Design Panel End */
-
-/* eslint-disable */
-/* prettier-disable */
-/* @ts-nocheck */
-
-const pg_font_urls = [
-  'https://fonts.googleapis.com/css?family=Sora:100,200,300,400,500,600,700,800|Sora:100,200,300,400,500,600,700,800&display=swap',
-]
 
 const pg_background_urls = {
   'design-image':
@@ -244,3 +241,5 @@ module.exports = {
   pg_backgrounds,
   pg_background_urls,
 }
+
+/* Pinegrow generated Design Panel End */

@@ -4,6 +4,7 @@ import {
   pg_backgrounds,
 } from './themes/pg-tailwindcss/tokens.mjs'
 
+import { getFontsWithFallback } from './utils/font'
 import { safelist } from './utils/colors'
 
 export default {
@@ -13,7 +14,7 @@ export default {
     require('@tailwindcss/forms'),
     require('@pinegrow/tailwindcss-plugin').default({
       colors: pg_colors, // primary, secondary etc
-      fonts: pg_fonts,
+      fonts: getFontsWithFallback(pg_fonts),
       backgrounds: pg_backgrounds, // bg-design-image, bg-design-image-large
     }),
   ],

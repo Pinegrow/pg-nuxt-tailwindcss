@@ -116,4 +116,7 @@ const safelist = [
   },
 ]
 
-export { safelist, variantColors as colors }
+const primary = pg_colors.primary?.DEFAULT || pg_colors.primary?.[600]
+const secondary = pg_colors.secondary?.DEFAULT || pg_colors.primary?.[600]
+
+export { safelist, variantColors as colors, primary, secondary }
