@@ -1,6 +1,4 @@
 <script setup lang="ts">
-  import { useMobileMenu } from '@/composables/mobile-menu'
-  import { isCurrentRoute } from '@/composables/nav'
   const { isMobileMenuOpen } = useMobileMenu()
 
   defineProps({
