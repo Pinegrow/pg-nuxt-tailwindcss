@@ -1,5 +1,9 @@
+// since `.js, .ts` files are not included by default,
+// the following comment tells UnoCSS to force scan this file (to pick the logo icon).
+// @unocss-include
+
 export default {
-  name: `Vue Designer`,
+  name: 'Vue Designer',
   description: 'Vue Designer Nuxt Tailwind CSS - Quick start template',
   logo: 'i-vscode-icons:file-type-coffeelint',
   author: 'Pinegrow',
