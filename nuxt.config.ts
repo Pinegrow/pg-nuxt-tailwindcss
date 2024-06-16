@@ -1,4 +1,4 @@
-// import { fileURLToPath, URL } from 'node:url'
+import { fileURLToPath, URL } from 'node:url'
 import presetIcons from '@unocss/preset-icons'
 
 import site from './site'
@@ -15,10 +15,18 @@ const {
 
 export default defineNuxtConfig({
   extends: [
-    './my-nuxt-tailwindcss-layer', // NavBar and Footer components
+    './app-nuxt-tailwindcss-layer', // NavBar and Footer components
   ],
   // ssr: false,
   devtools: { enabled: false }, // Disable when using Vue devtools
+
+  // Preparation for Nuxt 4 migration
+  srcDir: 'app',
+  serverDir: fileURLToPath(new URL('server', import.meta.url)),
+  dir: {
+    public: fileURLToPath(new URL('public', import.meta.url)),
+    modules: fileURLToPath(new URL('modules', import.meta.url)),
+  },
 
   experimental: {
     componentIslands: true,
@@ -62,7 +70,7 @@ export default defineNuxtConfig({
   },
 
   css: [
-    '~/assets/css/tailwind.css',
+    '@/assets/css/tailwind.css',
     'lite-youtube-embed/src/lite-yt-embed.css',
   ],
 
@@ -268,7 +276,7 @@ export default defineNuxtConfig({
       //     name: 'My Awesome Lib 3.0',
       //     key: 'my-awesome-lib',
       //     pluginPath: fileURLToPath(
-      //       new URL('./my-awesome-lib/web-types.json', import.meta.url),
+      //       new URL('./web-types/my-awesome-lib.json', import.meta.url),
       //     ),
       //   },
       // ],
