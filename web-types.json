@@ -91,6 +91,15 @@
               "description": "Use the #trailing slot to set the content of the trailing icon."
             }
           ]
+        },
+        {
+          "name": "BackgroundImageWrapper",
+          "attributes": [
+            {
+              "name": "imageUrl",
+              "customType": "image"
+            }
+          ]
         }
       ],
       "attributes": [
