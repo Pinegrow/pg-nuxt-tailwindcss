@@ -23,8 +23,7 @@
         size="lg"
         :variant="isCurrentRoute(navlink, currentPath) ? 'solid' : 'ghost'"
         class="!rounded-lg"
-      >
-      </BaseButton>
+      />
     </div>
     <BaseButton
       class="ml-3"
@@ -34,7 +33,7 @@
       color="secondary"
       ><span class="pl-2">Try Now</span>
       <template #trailing>
-        <BaseIcon name="i-mdi-pine-tree" height="24px"></BaseIcon>
+        <BaseIcon name="i-mdi-pine-tree" height="24px" />
       </template>
     </BaseButton>
   </div>
