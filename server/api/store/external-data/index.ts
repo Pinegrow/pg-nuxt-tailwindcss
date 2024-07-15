@@ -1,6 +1,6 @@
 import type { Store, Products } from '~~/types/store'
 
-export let products: Products
+let products: Products
 let categories: string[] = []
 
 const apiBaseUrl = 'https://fakestoreapi.com'
