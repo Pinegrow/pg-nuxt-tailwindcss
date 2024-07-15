@@ -187,7 +187,7 @@ export default defineNuxtConfig({
   },
 
   imports: {
-    dirs: ['my-components'],
+    // dirs: ['my-components'],
   },
 
   vue: {
