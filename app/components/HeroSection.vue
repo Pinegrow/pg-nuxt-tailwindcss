@@ -1,4 +1,6 @@
 <script setup lang="ts">
+  import { heroImageUrl } from '@/utils/hero'
+
   const heroCaption = 'Welcome To'
   const heroTitle = 'Vue Designer'
   const heroDescription =
@@ -6,7 +8,7 @@
 </script>
 <template>
   <section>
-    <BackgroundImageWrapper>
+    <BackgroundImageWrapper :image-url="heroImageUrl">
       <div
         class="pb-36 pt-2 px-6 relative rounded-3xl md:pb-48 lg:pb-72 lg:px-12"
       >
