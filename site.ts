@@ -32,7 +32,7 @@ export default {
     {
       text: 'Subscribe',
       link: '/subscribe',
-      type: 'primary',
+      type: 'secondary',
       icon: 'i-mdi-home',
     },
   ],
