@@ -9,11 +9,7 @@
       'vue-designer.svg',
       /* options */
       {
-        provider:
-          process.env.NODE_ENV === 'production'
-            ? 'netlify'
-            : null /* defaults to ipx or ipxStatic */,
-        placeholder: false, // placeholder image before the actual image is fully loaded.
+        // placeholder: false, // placeholder image before the actual image is fully loaded.
       },
     ),
   }
