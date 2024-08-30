@@ -32,10 +32,10 @@ npm install #or use pnpm
 
 (or)
 
-If you prefer a blank template (a single empty home page) instead,
+If you prefer a minimal template (a single empty home page) instead,
 
 ```bash
-npx giget@latest gh:pinegrow/pg-nuxt-tailwindcss#blank my-nuxt-tailwindcss-app #project-name
+npx giget@latest gh:pinegrow/pg-nuxt-tailwindcss#minimal my-nuxt-tailwindcss-app #project-name
 cd my-nuxt-tailwindcss-app
 npm install #or use pnpm
 ```
@@ -49,7 +49,7 @@ Open your project in Vue Designer and follow the instructions displayed in the C
 ### Start your development server
 
 ```bash
-npm run dev
+npm run dev #
 ```
 
 ### Build
@@ -114,6 +114,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 - [VeeValidate](https://vee-validate.logaretm.com/v4/integrations/nuxt/) takes care of value tracking, validation, errors, submissions and more.
 - [Nuxt Image](https://image.nuxt.com/) - Plug-and-play image optimization for Nuxt apps.
 - [Nuxt SEO](https://nuxtseo.com/) - Amazing collection of hand-crafted Nuxt Modules for all SEO needs with a unified site config. Includes `nuxt-site-config`, `nuxt-simple-robots`, `nuxt-simple-sitemap`, `nuxt-og-image`, `nuxt-link-checker`, `nuxt-seo-experiments`, `nuxt-schema-org`.
+  - OG images and nuxtseo features can be previewed with nuxt-devtools during development. OG images can also be viewed using URL in this form - `/__og-image__/image/<path>/og.<extension>`
 
 ### Devtools
 
