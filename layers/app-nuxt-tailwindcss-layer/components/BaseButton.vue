@@ -8,8 +8,10 @@
   import { NuxtLink } from '#components'
   // import { useAppConfig } from '#imports'
   // TODO: Remove
-  // @ts-expect-error
+  // // @ts-expect-error
   import appConfig from '#build/app.config'
+
+  // const appConfig = useAppConfig()
 
   // TODO: Remove
   // const appConfig = useAppConfig()
