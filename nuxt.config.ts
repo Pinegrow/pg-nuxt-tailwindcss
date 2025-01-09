@@ -3,7 +3,7 @@ import { resolve } from 'pathe'
 import presetIcons from '@unocss/preset-icons'
 import { bundledLanguages } from 'shiki'
 
-import site from './site'
+import site from './app/site'
 const {
   name,
   description,

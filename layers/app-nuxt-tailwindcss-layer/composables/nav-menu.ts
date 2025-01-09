@@ -1,5 +1,5 @@
 import { computed } from 'vue'
-import site from '~~/site'
+import site from '@/site'
 
 export const useNavMenu = () => {
   const routes = useRouter().getRoutes()
