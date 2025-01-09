@@ -46,7 +46,7 @@ export const useHeadAndMeta = () => {
   }
 
   const {
-    title: siteTitle,
+    name: siteTitle,
     description: siteDescription,
     author,
     titleSeparator,
