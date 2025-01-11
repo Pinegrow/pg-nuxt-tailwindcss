@@ -3,7 +3,7 @@
 // @unocss-include
 
 export default {
-  name: 'Vue Designer',
+  title: 'Vue Designer',
   description: 'Vue Designer Nuxt Tailwind CSS - Quick start template',
   logo: 'i-vscode-icons:file-type-coffeelint',
   author: 'Pinegrow',
@@ -16,24 +16,25 @@ export default {
   twitter: '@vuedesigner',
   trailingSlash: false, // default
   titleSeparator: '|', // default
-  nav: [
-    {
-      text: 'Home',
-      link: '/',
-      type: 'primary',
-      icon: 'i-mdi-home',
-    },
-    {
-      text: 'Quick Start',
-      link: '/quick-start',
-      type: 'primary',
-      icon: 'i-mdi-home',
-    },
-    {
-      text: 'Subscribe',
-      link: '/subscribe',
-      type: 'secondary',
-      icon: 'i-mdi-home',
-    },
-  ],
+  navs: {
+    primary: [
+      {
+        title: 'Home',
+        icon: 'i-mdi-home',
+        to: '/',
+      },
+      {
+        title: 'Quick Start',
+        icon: 'i-mdi-home',
+        to: '/quick-start',
+      },
+    ],
+    secondary: [
+      {
+        title: 'Subscribe',
+        icon: 'i-mdi-home',
+        to: '/subscribe',
+      },
+    ],
+  },
 }
