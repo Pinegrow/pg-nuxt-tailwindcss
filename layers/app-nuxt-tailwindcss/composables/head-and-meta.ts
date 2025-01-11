@@ -68,10 +68,10 @@ export const useHeadAndMeta = () => {
   )
 
   useHead({
-    title, // title is defined statically using definePageMeta in pages and resolved here. For dynamic routes, this resolved title is further overriden within in the dynamic route itself (for eg, [slug]) using a second useHead.
+    // title, // title is defined statically using definePageMeta in pages and resolved here. For dynamic routes, this resolved title is further overriden within in the dynamic route itself (for eg, [slug]) using a second useHead.
 
     // // Other unused params - titleTemplate, templateParams
-    titleTemplate: null,
+    // titleTemplate: null,
 
     // Instead of setting meta via useHead, useServerSeoMeta or @nuxtjs/seo is used.
     // meta: [],

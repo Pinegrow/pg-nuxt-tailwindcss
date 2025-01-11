@@ -3,19 +3,51 @@ import { resolve } from 'pathe'
 import presetIcons from '@unocss/preset-icons'
 import { bundledLanguages } from 'shiki'
 
-import site from './site'
-const {
-  name,
-  description,
-  url,
-  defaultLocale,
-  identity,
-  twitter,
-  trailingSlash,
-  titleSeparator,
-} = site
+import { defineNuxtModule, createResolver } from '@nuxt/kit'
+import path from 'path'
+import fs from 'fs'
+import { updateSiteConfig } from 'nuxt-site-config-kit'
+
+const isExistsAndFile = (filePath) =>
+  !!(fs.existsSync(filePath) && fs.statSync(filePath).isFile())
+
+// import site from './site'
+// const {
+//   name,
+//   description,
+//   url,
+//   defaultLocale,
+//   identity,
+//   twitter,
+//   trailingSlash,
+//   titleSeparator,
+// } = site
+
+let nuxtApp
 
 export default defineNuxtConfig({
+  // hooks: {
+  //   ready: (nuxt) => {
+  //     nuxtApp = nuxt
+  //   },
+  //   'site-config:init': async () => {
+  //     const { resolve } = createResolver(import.meta.url)
+
+  //     // 1. siteMeta from app's srcDir
+  //     let srcDir = path.resolve(nuxtApp.options.srcDir, 'site.ts')
+
+  //     if (!isExistsAndFile(srcDir)) {
+  //       // 2. siteMeta from layer's srcDir
+  //       srcDir = resolve('../site.ts')
+  //     }
+
+  //     if (isExistsAndFile(srcDir)) {
+  //       const siteMeta = await import(srcDir)
+  //       updateSiteConfig(siteMeta)
+  //     }
+  //   },
+  // },
+
   // extends: [
   //   './app-nuxt-tailwindcss-layer', // NavBar and Footer components
   //   './nuxt-layer',
@@ -57,7 +89,7 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    '@pinegrow/nuxt-module',
+    // '@pinegrow/nuxt-module',
     '@unocss/nuxt',
     '@nuxt/content',
     '@vueuse/nuxt',
@@ -190,19 +222,19 @@ export default defineNuxtConfig({
     '/hidden': { robots: false },
   },
 
-  // Used by all modules in the @nuxtjs/seo collection
-  // https://nuxtseo.com/nuxt-seo/guides/configuring-modules
-  site: {
-    url,
-    name,
-    description,
-    defaultLocale,
-    // https://nuxtseo.com/nuxt-seo/guides/setting-an-identity
-    identity,
-    twitter,
-    trailingSlash,
-    titleSeparator,
-  },
+  // // Used by all modules in the @nuxtjs/seo collection
+  // // https://nuxtseo.com/nuxt-seo/guides/configuring-modules
+  // site: {
+  //   url,
+  //   name,
+  //   description,
+  //   defaultLocale,
+  //   // https://nuxtseo.com/nuxt-seo/guides/setting-an-identity
+  //   identity,
+  //   twitter,
+  //   trailingSlash,
+  //   titleSeparator,
+  // },
   robots: {
     // https://nuxtseo.com/robots/api/config#blocknonseobots
     blockNonSeoBots: true,
@@ -270,27 +302,27 @@ export default defineNuxtConfig({
     // ...
   },
 
-  pinegrow: {
-    liveDesigner: {
-      iconPreferredCase: 'unocss', // default value (can be removed), Nuxt UI uses the unocss format for icon names
-      devtoolsKey: 'devtoolsKey', // see plugins/devtools.client.ts
-      tailwindcss: {
-        /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
-        configPath: 'tailwind.config.ts',
-        cssPath: '@/assets/css/tailwind.css',
-        // themePath: false, // Set to false so that Design Panel is not used
-        // restartOnConfigUpdate: true,
-        // restartOnThemeUpdate: true,
-      },
-      // plugins: [
-      //   {
-      //     name: 'My Awesome Lib 3.0',
-      //     key: 'my-awesome-lib',
-      //     pluginPath: fileURLToPath(
-      //       new URL('./web-types/my-awesome-lib.json', import.meta.url),
-      //     ),
-      //   },
-      // ],
-    },
-  },
+  // pinegrow: {
+  //   liveDesigner: {
+  //     iconPreferredCase: 'unocss', // default value (can be removed), Nuxt UI uses the unocss format for icon names
+  //     devtoolsKey: 'devtoolsKey', // see plugins/devtools.client.ts
+  //     tailwindcss: {
+  //       /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
+  //       configPath: 'tailwind.config.ts',
+  //       cssPath: '@/assets/css/tailwind.css',
+  //       // themePath: false, // Set to false so that Design Panel is not used
+  //       // restartOnConfigUpdate: true,
+  //       // restartOnThemeUpdate: true,
+  //     },
+  //     // plugins: [
+  //     //   {
+  //     //     name: 'My Awesome Lib 3.0',
+  //     //     key: 'my-awesome-lib',
+  //     //     pluginPath: fileURLToPath(
+  //     //       new URL('./web-types/my-awesome-lib.json', import.meta.url),
+  //     //     ),
+  //     //   },
+  //     // ],
+  //   },
+  // },
 })
