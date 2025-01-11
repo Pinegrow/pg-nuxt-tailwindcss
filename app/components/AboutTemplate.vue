@@ -1,6 +1,6 @@
 <script setup lang="ts">
-  import site from '~~/site'
-  const { description } = site
+  import siteMeta from '@/site'
+  const { description } = siteMeta
 </script>
 <template>
   <div class="container mx-auto px-4 py-24 relative">

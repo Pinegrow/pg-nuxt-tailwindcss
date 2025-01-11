@@ -4,7 +4,7 @@
     // name: 'subscribe',
     // alias: 'subscribe',
     title: 'Subscribe',
-    description: `Don't Miss Out – Stay in the Know, Subscribe Today!`,
+    description: "Don't Miss Out – Stay in the Know, Subscribe Today!",
     navOrder: '3',
     type: 'secondary',
     icon: 'i-mdi-home',

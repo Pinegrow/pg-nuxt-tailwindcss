@@ -26,7 +26,7 @@
     }
   },
   "template_framework_id": "vue",
-  "open-pages": ["app/components/HeroSection.vue"],
+  "open-pages": [],
   "breakpoints": ["640px", "768px", "1024px", "1280px", "1536px"],
   "frameworks": [
     "@nuxt/image",
