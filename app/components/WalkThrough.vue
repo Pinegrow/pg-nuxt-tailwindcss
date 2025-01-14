@@ -1,4 +1,6 @@
 <script setup lang="ts">
+  import vueDesignerLogo from '@/assets/images/vue-designer.svg'
+
   const showTitle = ref(true)
 
   const { optimizeImage } = useOptimizeImage()
@@ -6,7 +8,7 @@
     alt: 'vue-designer',
     cover: true,
     ...optimizeImage(
-      'vue-designer.svg',
+      vueDesignerLogo,
       /* options */
       {
         // placeholder: false, // placeholder image before the actual image is fully loaded.
