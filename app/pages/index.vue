@@ -30,6 +30,7 @@
   const heroImage = heroImageOptimized.src
   const bgStyles = heroImageOptimized.bgStyles
 </script>
+
 <template>
   <div>
     <HeroSection />
