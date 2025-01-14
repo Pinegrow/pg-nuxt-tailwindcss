@@ -17,6 +17,7 @@
     // ogImage: 'images/ogImage.png', // url or local images inside public folder, for eg, ~/public/images/ogImage.png
   })
 </script>
+
 <template>
   <div>
     <div
