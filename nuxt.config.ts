@@ -69,7 +69,7 @@ export default defineNuxtConfig({
     // '@nuxtjs/fontaine', // blocked by https://github.com/nuxt-modules/fontaine/issues/342
     '@nuxtjs/critters',
     // '@nuxt/icon', // Enable once nuxt-icon is removed
-    'nuxt-icon', // To be replaced with @nuxt-icon (above), once NuxtSEO drops using this/becomes stable.
+    'nuxt-icon', // To be replaced with @nuxt-icon (above), once NuxtSEO drops using this/becomes stable./becomes stable.
     '@nuxt/eslint',
   ],
 
