@@ -26,18 +26,13 @@ export default {
         icon: 'i-mdi-home',
         to: '/',
       },
-      {
-        title: 'Quick Start',
-        icon: 'i-mdi-home',
-        to: '/quick-start',
-      },
     ],
     secondary: [
-      {
-        title: 'Subscribe',
-        icon: 'i-mdi-home',
-        to: '/subscribe',
-      },
+      // {
+      //   title: 'Subscribe',
+      //   icon: 'i-mdi-home',
+      //   to: '/subscribe',
+      // },
     ],
   },
 }
